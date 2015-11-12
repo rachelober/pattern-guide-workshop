@@ -1,19 +1,16 @@
 %left-icon {
   position: relative;
-
   &:before {
     display: block;
-    left: 0;
+    left: 0px;
     height: 16px;
     pointer-events: none;
     position: absolute;
     width: 16px;
   }
 }
-
 %right-icon {
   position: relative;
-
   &:after {
     display: block;
     height: 16px;
