@@ -1,0 +1,23 @@
+@import "typography/functions";
+@import "typography/mixins";
+@import "typography/extends";
+
+.heading--1 {
+  @extend %heading--1;
+}
+
+.heading--2 {
+  @extend %heading--2;
+}
+
+.text--regular {
+  @extend %text--regular;
+}
+
+.text--semi-bold {
+  @extend %text--semi-bold;
+}
+
+.text--bold {
+  @extend %text--bold;
+}

@@ -1,0 +1,7 @@
+// A dark button that lightens when hovered over
+.button--dark {
+  @include button(#3e3e3e, #3e3e3e, #fff);
+  &:active, &:hover {
+    background-color: scale-lightness(#3e3e3e, 15%);
+  }
+}

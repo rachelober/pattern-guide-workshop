@@ -1,0 +1,40 @@
+//
+// Standardized abstract color objects.
+//
+
+//
+// Color map
+// Naming from Name That Color http://chir.ag/projects/name-that-color/
+// ----------------------------------------------------------------------------
+
+// Basic shades
+$white:           #ffffff !default;
+$black:           #000000 !default;
+$charcoal:        #111111 !default;
+$mine-shaft:      #333333 !default;
+$emperor:         #555555 !default;
+$boulder:         #777777 !default;
+$dusty-gray:      #999999 !default;
+$silver:          #bbbbbb !default;
+$alto:            #dddddd !default;
+$gallery:         #eeeeee !default;
+$alabaster:       #f6f6f6 !default;
+
+// Accent colors
+$driftwood:       #a38546 !default;
+$tucson-sunset:   #ff0000 !default;
+$cream:           #fffbf5 !default;
+$science-blue:    #005ac8 !default;
+$cobalt:          #0050b3 !default;
+$bellini:         #ff8669 !default;
+
+// Colors used for alert and error messaging
+$surge:           #eff8f1 !default;
+$seafoam-teal:    #56baa0 !default;
+$cornflower:      #7091cd !default;
+$donut-pink:      #fcd4d0 !default;
+$donut-red:       #ff0524 !default;
+
+// Form fields
+// input-text-selection
+$selago:          #ebf1fd !default;

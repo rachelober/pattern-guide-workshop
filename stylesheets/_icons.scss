@@ -1,0 +1,17 @@
+@import "icons/extends";
+@import "icons/mixins";
+@import "icons/icons";
+
+[class^="icon--"],
+[class*=" icon--"] {
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include box-sizing("border-box");
+  &::before,
+  &::after {
+    background-size: cover;
+    content: "";
+    pointer-events: none;
+    @include box-sizing("border-box");
+  }
+}
