@@ -1,35 +1,30 @@
-// Mixin for button that can be used to create new variants of the
-// style.
+// Mixin for a block-styled button. The border, background color, text
+// color and hover state may be defined.
 //
 // Cutomizable options:
 //
 // $background-color - hex value
 // $border-color     - hex value or "none"
 // $color            - hex value
-@mixin button($background-color, $border-color, $color) {
+// $hover            - hex value
+@mixin button($background-color, $border-color, $color, $hover) {
   @extend %button;
-  background-color: $background-color;
-  border-color: $border-color;
+  background-color: $background-color !important;
+  border-color: $border-color !important;
   color: $color !important;
-  @include box-sizing(border-box);
-  &:active, &:hover {
-    @if lightness($background-color) > 90% {
-      background-color: darken($background-color, 5%);
-    }
-    @else if lightness($background-color) >= 20% {
-      background-color: darken($background-color, 15%);
-    }
-    @else {
-      background-color: lighten($background-color, 15%);
-    }
+
+  &:active,
+  &:hover {
+    background-color: $hover !important;
+    border-color: $hover !important;
   }
-  &.is-disabled, &[disabled]{
-    background-color: $alto;
-    border-color: $silver;
-    color: $silver !important;
+
+  &.is-disabled,
+  &[disabled]{
     cursor: default;
+    opacity: 0.2;
     pointer-events: none;
   }
 }
 
-@import "lib/rounded-square";
+@import "lib/block";

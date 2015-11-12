@@ -1,15 +1,16 @@
 %button {
+  @extend %text--light;
   -webkit-font-smoothing: antialiased;
   -webkit-touch-callout: none;
-  background-clip: padding-box;
-  border: 1px solid transparent;
-  border-radius: 0.2em;
+  background-color: white;
+  border: 1px solid black;
+  color: white;
   cursor: pointer;
   display: inline-block;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: normal;
   height: 40px;
-  line-height: 40;
+  line-height: 40px;
   margin: 0;
   padding: 0 24px;
   position: relative;

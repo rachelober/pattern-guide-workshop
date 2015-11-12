@@ -1,27 +1,25 @@
 %left-icon {
   position: relative;
-  @include box-sizing(border-box);
+
   &:before {
-    position: absolute;
-    left: 0;
-    width: 16px;
-    height: 16px;
     display: block;
+    left: 0;
+    height: 16px;
     pointer-events: none;
-    @include box-sizing(border-box);
+    position: absolute;
+    width: 16px;
   }
 }
 
 %right-icon {
   position: relative;
-  @include box-sizing(border-box);
+
   &:after {
+    display: block;
+    height: 16px;
+    pointer-events: none;
     position: absolute;
     right: 0;
     width: 16px;
-    height: 16px;
-    display: block;
-    pointer-events: none;
-    @include box-sizing(border-box);
   }
 }
