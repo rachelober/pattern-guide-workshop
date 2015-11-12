@@ -1,15 +1,17 @@
 # Default application configuration that all configurations inherit from.
+# Modify settings per
+# https://github.com/brigade/scss-lint/
 
 scss_files: "**/*.scss"
 
 linters:
   BangFormat:
-    enabled: true
+    enabled: false
     space_before_bang: true
     space_after_bang: false
 
   BorderZero:
-    enabled: true
+    enabled: false
     convention: none
 
   ColorKeyword:
@@ -19,10 +21,10 @@ linters:
     enabled: true
 
   Comment:
-    enabled: true
+    enabled: false
 
   DebugStatement:
-    enabled: true
+    enabled: false
 
   DeclarationOrder:
     enabled: false
@@ -31,7 +33,7 @@ linters:
     enabled: false
 
   ElsePlacement:
-    enabled: true
+    enabled: false
     style: same_line
 
   EmptyLineBetweenBlocks:
@@ -60,10 +62,10 @@ linters:
     enabled: false
 
   ImportantRule:
-    enabled: true
+    enabled: false
 
   ImportPath:
-    enabled: true
+    enabled: false
     leading_underscore: false
     filename_extension: false
 
@@ -78,11 +80,11 @@ linters:
     style: exclude_zero
 
   MergeableSelector:
-    enabled: true
+    enabled: false
     force_nesting: false
 
   NameFormat:
-    enabled: true
+    enabled: false
     allow_leading_underscore: true
     convention: hyphenated_lowercase
 
@@ -91,7 +93,7 @@ linters:
     max_depth: 4
 
   PlaceholderInExtend:
-    enabled: true
+    enabled: false
 
   PropertyCount:
     enabled: false
@@ -99,12 +101,12 @@ linters:
     max_properties: 10
 
   PropertySortOrder:
-    enabled: true
+    enabled: false
     ignore_unspecified: false
     separate_groups: false
 
   PropertySpelling:
-    enabled: true
+    enabled: false
     extra_properties: []
 
   QualifyingElement:
@@ -114,40 +116,40 @@ linters:
     allow_element_with_id: false
 
   SelectorDepth:
-    enabled: true
+    enabled: false
     max_depth: 3
 
   SelectorFormat:
-    enabled: true
+    enabled: false
     convention: hyphenated_BEM
 
   Shorthand:
-    enabled: true
+    enabled: false
 
   SingleLinePerProperty:
-    enabled: true
+    enabled: false
     allow_single_line_rule_sets: false
 
   SingleLinePerSelector:
-    enabled: true
+    enabled: false
 
   SpaceAfterComma:
-    enabled: true
+    enabled: false
 
   SpaceAfterPropertyColon:
-    enabled: true
+    enabled: false
     style: one_space
 
   SpaceAfterPropertyName:
-    enabled: true
+    enabled: false
 
   SpaceBeforeBrace:
-    enabled: true
+    enabled: false
     style: space # or 'new_line'
     allow_single_line_padding: false
 
   SpaceBetweenParens:
-    enabled: true
+    enabled: false
     spaces: 0
 
   StringQuotes:
@@ -158,16 +160,16 @@ linters:
     enabled: true
 
   TrailingZero:
-    enabled: true
+    enabled: false
 
   UnnecessaryMantissa:
-    enabled: true
+    enabled: false
 
   UnnecessaryParentReference:
-    enabled: true
+    enabled: false
 
   UrlFormat:
-    enabled: true
+    enabled: false
 
   UrlQuotes:
     enabled: true
@@ -185,7 +187,7 @@ linters:
     exclude: []
 
   ZeroUnit:
-    enabled: true
+    enabled: false
 
   Compass::*:
     enabled: false
