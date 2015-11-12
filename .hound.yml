@@ -1,0 +1,15 @@
+scss:
+  config_file: .scss-lint.yml
+  enabled: true
+
+javascript:
+  enabled: false
+
+coffeescript:
+  enabled: false
+
+ruby:
+  enabled: false
+
+haml:
+  enabled: false
