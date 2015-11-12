@@ -38,7 +38,7 @@ module.exports = function (grunt) {
       dev: {
         files: {
           // destination                      // source file
-          "tmp/stylesheets/styles.css":       "stylesheets/patterns.scss",
+          "tmp/stylesheets/patterns.css":     "stylesheets/patterns.scss",
           "tmp/stylesheets/structure.css":    "stylesheets/structure.scss",
         },
         options: {
